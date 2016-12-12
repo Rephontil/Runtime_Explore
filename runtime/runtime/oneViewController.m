@@ -16,6 +16,11 @@
 
 @implementation oneViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSLog(@"真的viewWillAppear方法被调用了...");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		274A59DC1DFEAAC500B3DA43 /* UIViewController+DJExamine.m in Sources */ = {isa = PBXBuildFile; fileRef = 274A59DB1DFEAAC500B3DA43 /* UIViewController+DJExamine.m */; };
 		C205086D1CBD481F0026AC7A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C205086C1CBD481F0026AC7A /* TableViewController.m */; };
 		C288A6581CC10AC900BC7B0C /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C288A6571CC10AC900BC7B0C /* FourViewController.m */; };
 		C288A65B1CC10AD400BC7B0C /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C288A65A1CC10AD400BC7B0C /* FiveViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		274A59DA1DFEAAC500B3DA43 /* UIViewController+DJExamine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DJExamine.h"; sourceTree = "<group>"; };
+		274A59DB1DFEAAC500B3DA43 /* UIViewController+DJExamine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DJExamine.m"; sourceTree = "<group>"; };
 		C205086B1CBD481F0026AC7A /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		C205086C1CBD481F0026AC7A /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		C288A6561CC10AC900BC7B0C /* FourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 		C2DEA9951CBBB8970024C7F7 /* runtime */ = {
 			isa = PBXGroup;
 			children = (
+				274A59DA1DFEAAC500B3DA43 /* UIViewController+DJExamine.h */,
+				274A59DB1DFEAAC500B3DA43 /* UIViewController+DJExamine.m */,
 				C2DEA9991CBBB8970024C7F7 /* AppDelegate.h */,
 				C2DEA99A1CBBB8970024C7F7 /* AppDelegate.m */,
 				C2DEA99C1CBBB8970024C7F7 /* ViewController.h */,
@@ -239,6 +244,7 @@
 				C2DEA99E1CBBB8970024C7F7 /* ViewController.m in Sources */,
 				C28FABAF1CBCEB82007FB54C /* HGUser.m in Sources */,
 				C28D627F1CBDE318001D0518 /* twoViewController.m in Sources */,
+				274A59DC1DFEAAC500B3DA43 /* UIViewController+DJExamine.m in Sources */,
 				C2BEFF9F1CC256F90047CA1F /* UIButton+count.m in Sources */,
 				C2DEA99B1CBBB8970024C7F7 /* AppDelegate.m in Sources */,
 				C288A65E1CC10AE000BC7B0C /* SixViewController.m in Sources */,
