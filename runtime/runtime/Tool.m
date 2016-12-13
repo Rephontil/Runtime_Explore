@@ -32,11 +32,10 @@
     return @"haha,你的方法被我替换掉了";
 }
 
-
 - (void)addCount
 {
     _count += 1;
     
-    NSLog(@"点击次数------%ld", _count);
+    NSLog(@"点击次数------%ld次", _count);
 }
 @end
