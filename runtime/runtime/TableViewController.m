@@ -14,6 +14,7 @@
 #import "FiveViewController.h"
 #import "SixViewController.h"
 #import "SevenViewController.h"
+#import "EightViewController.h"
 @interface TableViewController ()
 
 @property (nonatomic, strong) NSArray *dataSource;
@@ -39,7 +40,8 @@
                     @"拦截并替换方法",
                     @"在方法上增加额外功能",
                     @"实现NSCoding的自动归档和解档",
-                    @"实现字典转模型的自动转换"
+                    @"实现字典转模型的自动转换",
+                    @"runtime实现的自定义对象存储"
                     ];
 
     self.tableView.tableFooterView = [UIView new];
@@ -133,6 +135,13 @@
             [self.navigationController pushViewController:fiveVC animated:YES];
             break;
         }
+        case 7:{
+            
+            EightViewController *eight = (EightViewController *)[mainStoryBoard instantiateViewControllerWithIdentifier:@"eightvciden"];
+            [self.navigationController pushViewController:eight animated:YES];
+            break;
+        }
+
 
             
         default:

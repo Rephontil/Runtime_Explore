@@ -9,6 +9,7 @@
 #import "oneViewController.h"
 #import "Person.h"
 #import <objc/runtime.h>
+#import "Movie.h"
 @interface oneViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *textfield;
 @property (nonatomic, strong) Person *person;
@@ -27,6 +28,8 @@
     self.person = [Person new];
     _person.name = @"xiaoming";
     NSLog(@"XiaoMing first answer is %@",self.person.name);
+    
+   
     
 }
 
@@ -53,6 +56,7 @@
 - (IBAction)changename:(UIButton *)sender {
     [self sayName];
     NSLog(@"%@",self.person.name);
+    
     
 }
 

@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "TableViewController.h"
 #import "Movie.h"
-#define kMovieListURL @"http://project.lanou3g.com/teacher/yihuiyun/lanouproject/movielist.php"
+
 @interface ViewController ()
 @property (nonatomic, retain) NSMutableArray *allDataArray;
 @end
@@ -22,8 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"welcome to read!");
-    
-    
     
 }
 

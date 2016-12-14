@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+     self.view.backgroundColor = [UIColor cyanColor];
     
-    self.view.backgroundColor = [UIColor whiteColor];
      self.allDataArray = [NSMutableArray array];
     
     NSDictionary *user = @{ @"name":@"zhangsan",

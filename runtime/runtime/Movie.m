@@ -55,7 +55,6 @@ free(ivars);\
 return self;\
 \
 
-
 @implementation Movie
 
 
@@ -90,7 +89,6 @@ return self;\
     encodeRuntime(Movie)
 }
 */
-
 
 
 
