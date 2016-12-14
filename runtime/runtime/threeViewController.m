@@ -46,6 +46,7 @@
 }
 
 
+
 #pragma mark 方法交换
 - (void)exchange_Method1
 {
@@ -69,7 +70,6 @@
     method_exchangeImplementations(mtd1, mtd2);
     objc_msgSend(self, @selector(exchange_Method1));
     //    2016-12-12 17:44:37.284 Runtime[4463:285682] exchange_Method2
-    
 }
 
 

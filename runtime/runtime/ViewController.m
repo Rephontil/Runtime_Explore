@@ -16,9 +16,14 @@
 
 @implementation ViewController
 
+#define STRING_MACRO(A)   NSLog(@"%@",A)
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"welcome to read!");
+    
+    
     
 }
 

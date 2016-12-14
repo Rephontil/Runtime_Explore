@@ -4,7 +4,7 @@
 //
 //  Created by ZhouYong on 16/4/16.
 //  Copyright © 2016年 ZhouYong/Rephontil. All rights reserved.
-//
+//  攔截并且替換方法。  注意：方法替换分为类方法和实例方法。对应于两个不同的函数哦😄，注意哦。
 
 #import "UIButton+count.h"
 #import "Tool.h"
@@ -20,7 +20,7 @@
     dispatch_once(&onceToken, ^{
         
         Class selfClass = [self class];
-        
+    
         //源方法的SEL和Method
         SEL oriSEL = @selector(sendAction:to:forEvent:);
         Method oriMethod = class_getInstanceMethod(selfClass, oriSEL);
@@ -37,10 +37,12 @@
         if (addSucc) {
             
             class_replaceMethod(selfClass, cusSEL, method_getImplementation(oriMethod), method_getTypeEncoding(oriMethod));
+            
         }else {  //添加失败：说明源方法已经有实现，直接将两个方法的实现交换即
             
             method_exchangeImplementations(oriMethod, cusMethod);
         }
+        
         
     });
 }
