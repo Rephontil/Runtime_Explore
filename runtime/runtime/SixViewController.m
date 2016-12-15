@@ -20,13 +20,13 @@
     
      self.allDataArray = [NSMutableArray array];
     
-    NSDictionary *user = @{ @"name":@"zhangsan",
+    NSDictionary *user = @{ @"name":@"馮小剛",
                             @"age": @(12),
                             @"sex": @"man",
                             };
     
     NSDictionary *dict = @{ @"movieId":@"28678",
-                            @"movieName": @"539fU8276",
+                            @"movieName": @"速度与激情和速8",
                             @"pic_url": @"fsdfds",
                             @"user" : user
                             };
@@ -44,11 +44,15 @@
         
         //这种事系统自带的方式
 //        Movie *movie = [Movie new];
-//        [movie setValueZhouYong/RephontilorKeysWithDictionary:item];
+//        [movie setValuesForKeysWithDictionary:item];
 //        [self.allDataArray addObject:movie];
+        
+        
         
         Movie *movie = [Movie objectWithDict:item];
          [self.allDataArray addObject:movie];
+        
+       
         
     }
     
