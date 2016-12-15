@@ -53,7 +53,7 @@
     }
     
     
-    NSLog(@"----%@", _allDataArray);
+    NSLog(@"_allDataArray = ---->%@", _allDataArray);
     
     
 }

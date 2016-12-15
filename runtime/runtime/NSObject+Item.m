@@ -63,7 +63,7 @@
             }
             
             // 字典,user
-            //            NSLog(@"%@",key);
+//                        NSLog(@"%@",key);
         }
         
         // 三级转换：NSArray中也是字典，把数组中的字典转换成模型.
@@ -106,5 +106,7 @@
     return objc;
     
 }
+
+
 
 @end

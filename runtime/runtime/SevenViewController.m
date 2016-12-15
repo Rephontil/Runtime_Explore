@@ -22,6 +22,7 @@
     m.movieName = @"aaaaaaaa";
     m.movieId = @"1222331";
     m.pic_url = @"llllllllll";
+    m.user.sex = @"Male";
     
     NSString *document  = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
     NSString *filePath = [document stringByAppendingString:@"/123.txt"];
@@ -33,7 +34,7 @@
    //读取
     Movie *movie =  [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
     
-    NSLog(@"----%@",movie);
+    NSLog(@"-->%@--%@",movie,movie.user.sex);
     
    
 }

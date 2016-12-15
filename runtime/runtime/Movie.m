@@ -4,7 +4,7 @@
 //
 //  Created by ZhouYong on 16/4/11.
 //  Copyright © 2016年 ZhouYong/Rephontil. All rights reserved.
-//
+//  自动归档和解档的宏
 
 #import "Movie.h"
 #import <objc/runtime.h>
@@ -122,6 +122,37 @@ return self;\
 - (instancetype)initWithCoder:(NSCoder *)decoder
 {
     initCoderRuntime(Movie)
+}
+*/
+
+
+
+#pragma mark  不光归档自身的属性，还要循环把所有父类的属性也找出来。视情况选择不同的方法吧😄😄
+/*
+- (void)tuc_initWithCoder:(NSCoder *)aDecoder {
+    // 不光归档自身的属性，还要循环把所有父类的属性也找出来
+    Class selfClass = self.class;
+    while (selfClass &&selfClass != [NSObject class]) {
+        
+        unsigned int outCount = 0;
+        Ivar *ivars = class_copyIvarList(selfClass, &outCount);
+        for (int i = 0; i < outCount; i++) {
+            Ivar ivar = ivars[i];
+            NSString *key = [NSString stringWithUTF8String:ivar_getName(ivar)];
+            
+            // 如果有实现忽略属性的方法
+            if ([self respondsToSelector:@selector(ignoredProperty)]) {
+                // 就跳过这个属性
+                if ([[self ignoredProperty] containsObject:key]) continue;
+            }
+            
+            id value = [aDecoder decodeObjectForKey:key];
+            [self setValue:value forKey:key];
+        }
+        free(ivars);
+        selfClass = [selfClass superclass];
+    }
+    
 }
 */
 
