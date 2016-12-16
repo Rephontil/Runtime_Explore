@@ -13,9 +13,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property (weak, nonatomic) IBOutlet UITextField *textfield;
 
+
 @end
 
 @implementation EightViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,7 +32,7 @@
     movie = array[0];
     NSLog(@"movie.pic_url:--->%@",movie.pic_url);
     self.label.text = movie.pic_url;
-    // Do any additional setup after loading the view.
+
 }
 
 - (IBAction)storeClick:(id)sender {
@@ -47,4 +49,17 @@
     self.label.text = movie.pic_url;
 }
 
+
+
+
 @end
+
+
+
+
+
+
+
+
+
+
